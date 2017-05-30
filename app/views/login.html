@@ -1,0 +1,28 @@
+<div class="card center authCard md-whiteframe-15dp">
+    <h1 class = "authTitle">Log In!</h1>
+
+    <form ng-submit="submitInfo()">
+
+        <md-input-container class = "authInputContainer">
+            <md-icon class="authIcons material-icons prefix">account_circle</md-icon>
+            <label>Email</label>
+            <input name="username" class = "authInput" type="email" class="validate" ng-model = "login.username">
+        </md-input-container>
+
+        <br>
+
+        <md-input-container class = "authInputContainer">
+        <md-icon class="authIcons material-icons prefix">vpn_key</md-icon>
+        <label>Password</label>
+        <input name="password" class = "authInput center" type = "password" type="text" class="validate" ng-model = "login.password">
+        </md-input-container>
+
+        <br>
+
+
+        <!-- finish and Sign Up -->
+        <br>
+        <md-button type="submit" style="margin: 0px;" class="authButton md-raised noMargin colorButtons">Log In</md-button>
+        <br><br><a href="#/forgot/new">Forgot Password</a>
+    </form>
+</div>

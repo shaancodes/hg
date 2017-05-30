@@ -1,0 +1,32 @@
+<div class="authCard card center md-whiteframe-15dp">
+    <h1 class = "authTitle">Sign Up!</h1>
+
+    <form ng-submit="submitInfo()">
+
+        <md-input-container class = "authInputContainer">
+            <md-icon class="authIcons material-icons prefix">account_circle</md-icon>
+            <label>Email</label>
+            <input name="username" class = "authInput"  type="email" class="validate" ng-model = "signup.username" required>
+        </md-input-container>
+
+        <br>
+
+        <md-input-container class = "authInputContainer">
+                    <md-icon class="authIcons material-icons prefix">vpn_key</md-icon>
+            <label>Password</label>
+            <input name="password" class = "authInput" type = "password" type="text" class="validate" ng-model = "signup.password" required>
+        </md-input-container>
+
+        <br>
+
+        <md-input-container class = "authInputContainer">
+            <md-icon class="authIcons material-icons prefix">vpn_key</md-icon>
+            <label>Confirm Password</label>
+        <input class = "authInput" type = "password" type="text" class="validate" ng-model = "signup.confirm" required>
+        </md-input-container>
+
+        <!-- finish and Sign Up -->
+        <br>
+        <md-button type="submit" class=" authButton md-raised">Sign Up</md-button>
+    </form>
+</div>

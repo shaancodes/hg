@@ -1,0 +1,166 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+// endbower
+
+/**************************
+    IMPORTS
+**************************/
+
+//Variables
+@import "variables";
+
+//Animations
+@import "animations/animate";
+@import "animations/nganimations";
+@import "animations/keyframes";
+
+//Defaults
+@import "defaults/yeoman";
+@import "defaults/materialChanges";
+
+//Templates
+@import "templates/navbar";
+@import "templates/linkCards";
+
+//General Styles
+@import "general";
+
+/**************************
+    BEGIN MAIN STYLES
+**************************/
+
+/**************************
+    HOME
+**************************/
+
+.homeCard {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h1 {
+        font-size: 55px;
+    }
+}
+
+.mainIcon {
+    height: 128px;
+    width: 128px;
+}
+
+.homeTagLine {
+    padding-bottom: 0px;
+}
+
+.homeLogText {
+    padding-bottom: 0px;
+}
+
+.homeSignUp {
+    margin-right: 10px;
+}
+
+.homeLogIn {
+    margin-left: 10px;
+}
+
+/**************************
+    LOG IN / SIGN UP
+**************************/
+
+.authCard {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.authTitle {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.authIcons {
+    font-size: 40px !important;
+    vertical-align: middle;
+}
+
+.authInput {
+    text-align: center;
+
+    width: 75% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.authInputContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.authButton {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.linkFormCard {
+    padding: 12px;
+}
+
+.linkInput {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkInstructions {
+    width: 80%;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+/**************************
+    DUMPS/LINKS
+**************************/
+.findContainer {
+    margin-top: 15px;
+    height: 75px !important;
+}
+
+.findButton {
+    margin-right: 10px;
+    font-weight: 550;
+}
+
+.findInput {
+    margin-top: 15px;
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Loading more links
+.linkLimitLoad {
+
+    @extend .embedLoad;
+
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/**************************
+    END OF MAIN STYLES
+**************************/
+
+//Our quickfixes
+@import "quickFixes";

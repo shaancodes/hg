@@ -1,0 +1,70 @@
+<div class="card center authCard md-whiteframe-15dp">
+  <h1 class="authTitle">My Account</h1>
+
+  <div class="center" ng-show="!options.email">
+
+    <md-button class="findButton md-raised noMargin"
+    ng-click="options.email = true">
+      New Email
+    </md-button>
+
+  </div>
+
+  <form ng-show="options.email">
+
+    <md-input-container class = "authInputContainer">
+        <md-icon class="authIcons material-icons prefix">account_circle</md-icon>
+        <label>New Email</label>
+        <input class="authInput center" type="text" class="validate" ng-model="username.username">
+    </md-input-container>
+
+    <br>
+
+    <md-input-container class = "authInputContainer">
+        <md-icon class="authIcons material-icons prefix">account_circle</md-icon>
+        <label>Confirm Email</label>
+        <input class="authInput center" type="text" class="validate" ng-model="username.confirm">
+    </md-input-container>
+
+    <br>
+
+    <!-- finish and Sign Up -->
+    <md-button type="submit"
+    class="md-raised noMargin"
+    ng-click="submitUsername()">Save</md-button>
+  </form>
+
+  <br>
+
+  <div class="center" ng-show="!options.password">
+    <md-button class="findButton md-raised noMargin"
+    ng-click="options.password = true">
+      New Password
+  </md-button>
+  </div>
+
+  <form ng-show="options.password">
+
+    <md-input-container class = "authInputContainer">
+    <md-icon class="authIcons material-icons prefix">vpn_key</md-icon>
+    <label>New Password</label>
+    <input class="authInput center" type="password" class="validate" ng-model="password.password">
+    </md-input-container>
+
+    <br>
+
+    <md-input-container class = "authInputContainer">
+    <md-icon class="authIcons material-icons prefix">vpn_key</md-icon>
+    <label>Confirm Password</label>
+    <input class="authInput center" type="password" class="validate" ng-model="password.confirm">
+    </md-input-container>
+
+    <br>
+
+    <!-- finish and Sign Up -->
+    <md-button type="submit"
+    class="md-raised noMargin"
+    ng-click="submitPassword()">Save</md-button>
+
+  </form>
+</div>
